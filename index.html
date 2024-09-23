@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <link rel="stylesheet"href="//at.alicdn.com/t/c/font_4638810_5tigaiawfbt.css"/>
+       
+
+      
+        <meta charset="utf-8">
+        <title>首席豆子的初始网页</title>
+        <style>
+            
+            body{
+                display: flex;
+                background-image:url("壁纸222.jpeg")
+                ;/*背景图片*/
+                background-size: 100%;
+                
+                
+            }
+        
+            .baidusousuo{
+                border-radius: 15px;
+                transform: translate(340px,192px);
+                width: px;
+                height:10x;
+                cursor: pointer;
+        
+            
+            
+    
+
+                
+            }
+            #sousuolan{
+                border-radius: 10px;
+                transform: translate(340px,190px); 
+                width: 500px;
+                height: 24px;
+              }
+        .touxiang{
+            border-radius: 60px;
+           width: 120px;
+           height: 120px;
+           transform: translate(690px,20px);
+
+        }    
+    .icon-link{
+        
+
+    }
+    #sousuotubiao{
+        align-items: center;
+        
+       font-size:18px;
+       
+    }
+    .clock-container {
+        transform: translate(-600px,25px);
+        border:5px solid #333;
+        border-radius: 30px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        
+
+        
+        
+        
+
+        
+    
+    
+    }
+    #clock {
+      font-size: 30px;
+      font-weight: bold;
+      color: #1798af;
+      align-items: center;
+
+      
+      
+      
+    }
+    a{
+        color: aqua;
+        font-size: large;
+        outline: 0;
+        cursor: pointer;
+    
+
+    
+    }
+
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+       
+        </style>
+         </head>
+<body>
+    <div>
+        <img src=" Image_2.jpg" alt="logo" height="60px" width="60px" class="touxiang">
+        </img>
+    </div>
+    <div>
+    <form action="https://www.baidu.com/s" method="get" target="_blank">
+       <input  type="text" id="sousuolan" name="wd" placeholder="快输入搜索关键词鸭ψ(｀∇´)ψ" required>
+       <button class="baidusousuo"><i  class="iconfont icon-sousuo"id="sousuotubiao">百度搜索</i>
+        </button>
+       
+ </form>
+</div>
+
+ <div class="clock-container">
+    <a  href="https://www.beijing-time.org/">北京时间:</a>
+    <div id="clock"></div>
+</div>
+    
+
+
+
+
+
+</body>
+<script>
+    function updateClock() {
+      const now = new Date();
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const seconds = now.getSeconds();
+      const timeString = `${hours}:${minutes}:${seconds}`;
+      document.getElementById('clock').textContent = timeString;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</script>
+
+
+
+
+</html>
